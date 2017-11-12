@@ -25,6 +25,7 @@
         "debug": "*",
         "express": "*",
         "jade": "*",
+        "leaflet": "^1.2.0",
         "moment": "^2.18.1",
         "morgan": "*",
         "react": "^16.0.0",

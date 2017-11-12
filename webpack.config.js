@@ -5,7 +5,7 @@ module.exports = {
 
     output: {
         path: __dirname,
-        filename: './public/javascripts/app.js'
+        filename: './public/js/app.js'
     },
 
     devServer: {
