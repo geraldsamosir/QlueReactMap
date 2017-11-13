@@ -138,7 +138,7 @@ class SoalBonuspage extends Component {
                 
         <center>
           <div className="loader" 
-          style={{display:(this.state.loading == true)?"":"none",marginTop:window.innerHeight /2 }}
+          style={{display:(this.state.loading == true)?"":"none",marginTop:window.innerHeight /5 }}
           />
         </center>
         <LayerGroup >

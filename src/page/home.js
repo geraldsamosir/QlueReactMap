@@ -16,7 +16,7 @@ class Homepage extends Component {
                    <center>
                        <img src="http://qlue.co.id/site/wp-content/uploads/2017/01/lg_QlueWithText.png" alt=""/>
                        <h1>Qlue Test</h1>
-                       <p>Aplikasi ini untuk memenuhi test masuk qlue untuk soal no 3 dan soal no 4 (Soalbonus) </p>
+                       <p>Aplikasi ini untuk memenuhi test masuk qlue untuk soal no 3 dan soal no 4 (Soal bonus) </p>
                    </center>
                </div>
             </div>
