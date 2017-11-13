@@ -7,6 +7,10 @@
     <title>Qlue React Maps</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <style>
         .markeranimate:hover {
             -webkit-animation: bounce 1s;
@@ -25,6 +29,23 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        /*costum map*/
+        .leaflet-popup-content-wrapper {
+            background-color: #000;
+            color:white;
+             box-shadow: 10px 10px 5px #8b8484;
+        }
+         .leaflet-popup-tip{
+            display: none
+        }
+        .leaflet-popup-content{
+            width: "100%";
+        }
+        b{
+            text-transform: uppercase;
+
         }
     </style>
 </head>

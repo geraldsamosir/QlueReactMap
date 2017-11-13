@@ -10,12 +10,29 @@ export default class Layout extends Component {
     render(){
         return(
             <div>
-                <h1 className="animated bounce">Qlue Testing </h1>
-                <br/>
-                <Link to={"/"}>Home</Link>
-                <Link to={"/test3"}>Test no 3</Link>
-                <Link to={"/soalbonus"}>Soal Bonus</Link>
-                <hr />
+                 
+                <header className="navbar" style={{background:"transparent",position:"fixed"}}>
+                    <br/>
+                        <section className="navbar-section">
+
+                            <Link to={"/"} className="btn btn-link">
+                                <img 
+                                    src="http://qlue.co.id/site/wp-content/uploads/2017/01/lg_QlueWithText.png" 
+                                    alt=""
+                                    style={{width:100,height:50}}/>
+                            </Link>
+                        </section>
+                         <section className="navbar-center">
+                            <center>
+                            <Link to={"/test3"} className="btn btn-sm btn-primary">Test no 3</Link>
+                            &nbsp;
+                            <Link to={"/soalbonus"} className="btn btn-sm btn-primary">Soal Bonus</Link>
+                            </center>
+                        </section>
+                        <section className="navbar-section">
+                        </section>
+
+                </header>
                  {this.props.children}
             </div>
         )

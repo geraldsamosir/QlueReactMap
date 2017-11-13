@@ -7,28 +7,18 @@ class Homepage extends Component {
         super(props)
     }
 
-    componentDidMount() {
-        console.log("here")
-        this.getdata()
-        this.getdata2()
-    }
-
-    async getdata(){
-        let result  =  await  ApiACtion.getApisoal3()
-
-        console.log(result)
-    }
-
-    async getdata2(){
-        let result  =  await  ApiACtion.getapisoalbonus()
-
-        console.log(result)
-    }
-
+   
     render(){
         return(
             <div>
-                home page
+               <br/>
+               <div className="container">
+                   <center>
+                       <img src="http://qlue.co.id/site/wp-content/uploads/2017/01/lg_QlueWithText.png" alt=""/>
+                       <h1>Qlue Test</h1>
+                       <p>Aplikasi ini untuk memenuhi test masuk qlue untuk soal no 3 dan soal no 4 (Soalbonus) </p>
+                   </center>
+               </div>
             </div>
         )
     }

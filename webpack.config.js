@@ -1,19 +1,13 @@
-const webpack = require('webpack')
+path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/app.js',
-
-    output: {
+  devtool: 'eval',
+  entry: './src/app.js',
+  output: {
         path: __dirname,
         filename: './public/js/app.js'
-    },
-
-    devServer: {
-        inline: true,
-        port: 3000
-    },
-
-
+  },
     module: {
         loaders: [
             {
@@ -29,16 +23,8 @@ module.exports = {
                 loader: 'style-loader!css-loader'
 
             }
-        ]
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            'React': 'react',
-            'ReactDOM': 'react-dom'
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            compress: true
-        })
-    ]
-}
+        ],
+        
+    }
+
+};
